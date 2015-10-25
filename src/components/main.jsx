@@ -1,14 +1,14 @@
 var React = require('react');
 var Header = require('./header');
+var TopicList = require('./topic-list');
 
 var Main = React.createClass({
     render: function(){
         return(
             <div>
-                <h1>
-                    Hello Pascer
-                </h1>
                 <Header />
+                <TopicList />
+                {this.props.children}
             </div>
         );
     },
