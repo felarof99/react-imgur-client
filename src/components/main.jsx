@@ -1,6 +1,6 @@
 var React = require('react');
-var Header = require('./header');
-var TopicList = require('./topic-list');
+var Header = require('./header.jsx');
+var TopicList = require('./topic-list.jsx');
 
 var Main = React.createClass({
     render: function(){

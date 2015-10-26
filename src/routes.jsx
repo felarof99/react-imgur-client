@@ -4,7 +4,7 @@ var HashHistory = require('react-router/lib/HashHistory')
 var Route = ReactRouter.Route;
 var Router = ReactRouter.Router;
 
-var Main = require('./components/main')
+var Main = require('./components/main.jsx')
 
 module.exports = (
     <Router history={new HashHistory}>
