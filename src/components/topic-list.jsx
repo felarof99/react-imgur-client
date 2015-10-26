@@ -30,7 +30,7 @@ var TopicList = React.createClass({
         return(
             this.state.topics.map(function(topic){
                 return(
-                    <TopicListItem topic={topic} />
+                    <TopicListItem topic={topic} key={topic.id}/>
                 );
             })
         );

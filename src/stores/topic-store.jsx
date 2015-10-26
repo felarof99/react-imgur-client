@@ -8,7 +8,7 @@ var TopicStore = Reflux.createStore({
     },
     fetchTopics: function(){
         Api.get('topics/defaults').then(function(json){
-            this.topics = json.data;
+            this.topics = json.data.slice(0,4);
             this.triggerChange();
         }.bind(this));
     },

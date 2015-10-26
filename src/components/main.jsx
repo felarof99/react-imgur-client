@@ -7,11 +7,19 @@ var Main = React.createClass({
         return(
             <div>
                 <Header />
-                <TopicList />
-                {this.props.children}
+                {this.renderChildren()}
             </div>
         );
     },
+    renderChildren: function(){
+        if(this.props.children) {
+            return(this.props.children);
+        } else {
+            return(
+                <TopicList />
+            );
+        }
+    }
 });
 
 module.exports = Main;
